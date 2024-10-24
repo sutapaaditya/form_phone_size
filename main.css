@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ font-family: "Montserrat", sans-serif;  
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(20deg, #fceef0, #e1707b);
+}
+.container{
+  max-width: 750px;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 30px 30px;
+  border-radius: 6px;
+}
+.title{
+ font-size: 26px; 
+  font-weight: 600;
+  position: relative;
+}
+.title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 10.5rem;
+  background-color: #e1707b;
+}
+.container form .user_details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.user_details .box{
+  width:calc(100% / 2 - 20px);
+  margin: 20px 0 12px 0;
+} 
+.details{
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+.box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 6px;
+  border: 1.5px solid #cecece;
+  padding-left: 14px;
+  font-size: 17px;
+}
+.box input:focus,
+.box input:valid{
+ border-color: #f0b6bc; 
+}
+.gen-title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.category{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}  
+.category label{
+  display: flex;
+  align-items: center;
+}
+.gen-details{
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#o_gen{
+  margin-right: 4rem;
+}
+#f_gen{
+  margin-right: 2rem;
+}
+#m_gen{
+  margin-right: 2rem;
+}
+.button{
+  height: 45px;
+  margin: 15px 0;
+  margin-bottom: -6px;
+}
+.button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #004;
+  cursor: pointer;
+  background: linear-gradient(-50deg, #fceef0, #e1707b);
+  border: 1.5px solid silver;
+  font-size: 26px;
+}
+@media (max-width: 584px){
+  .container{
+    max-width: 100%;
+ background-color: #f6d2d6;
+}
+  .user_details .box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .title{
+    margin-top: 40px;
+  }
+  .category{
+    width: 99%;
+  }
+  .button input{
+    border-radius: 6px;
+  }
+#o_gen,
+  #f_gen,
+  #m_gen{
+  margin-left: 0.2rem;
+}
+  }
